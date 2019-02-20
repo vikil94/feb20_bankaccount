@@ -21,9 +21,9 @@ class BankAccount:
     @classmethod
     def total_funds(cls):
         total = 0
-        for num in range(0,len(cls.accounts)):
-            total += cls.accounts[num].balance
-        return total
+        for num in range(0,len(cls.accounts)): #cls.accounts refers to the list accounts
+            total += cls.accounts[num].balance # it is a class variable so needs the cls
+        return total                           # in order to call on that variable 
 
     @classmethod
     def interest_time(cls):
