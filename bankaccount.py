@@ -28,7 +28,6 @@ class BankAccount:
             # in order to call on that variable
         return total
 
-
     @classmethod
     def interest_time(cls):
         for num in range(0, len(cls.accounts)):
